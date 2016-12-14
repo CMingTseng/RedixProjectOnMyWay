@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background">
+
+    <ImageView
+        android:layout_width="128dp"
+        android:layout_height="95dp"
+        app:srcCompat="@mipmap/logo"
+        android:layout_marginTop="59dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <com.onmyway.common.CustomTextView
+        android:text="Please enter a valid mobile number"
+        android:textColor="@color/colorRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textView"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true" />
+
+    <com.onmyway.common.CustomTextView
+        android:text="Sign Up"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_size_20dp"
+        android:background="@mipmap/screen2_loginbutton"
+        android:layout_width="323dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textView2"
+        android:gravity="center_vertical|center_horizontal|center" />
+
+    <com.onmyway.common.CustomEdittext
+        android:layout_width="323dp"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorBlack"
+        android:hint=" Phone number (Eg: +971 555000)"
+        android:textColorHint="@color/colorGrey"
+        android:textSize="@dimen/text_size_16dp"
+
+        android:background="@color/colorWhite"
+        android:ems="10"
+        android:layout_marginTop="55dp"
+        android:id="@+id/editText"
+        android:layout_below="@+id/imageView"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+</RelativeLayout>
