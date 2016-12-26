@@ -3,5 +3,9 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="text_size_20dp">20dp</dimen>
+    <dimen name="text_size_18dp">18dp</dimen>
     <dimen name="text_size_16dp">16dp</dimen>
+    <dimen name="edittext_height_35dp">35dp</dimen>
+    <dimen name="edittext_padding_left_10dp">10dp</dimen>
+    <dimen name="edittext_margin_10dp">10dp</dimen>
 </resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_purchase"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorBlueBackgroud"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create Event"
+                android:textSize="@dimen/text_size_20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/toolbar_title"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"/>
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_create_group_event"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorGrayBackgound"
+        android:weightSum="5">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            app:srcCompat="@mipmap/people"
+            android:layout_gravity="center"
+            android:id="@+id/imageView2" />
+
+        <com.onmyway.common.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textSize="@dimen/text_size_18dp"
+            android:textColor="@color/colorGrayText"
+            android:layout_gravity="center"
+            android:text="Create a group event"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:layout_weight="4" />
+    </LinearLayout>
+
+    <com.onmyway.common.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:inputType="textPersonName"
+        android:text="Frequently Contacted"
+        android:textSize="@dimen/text_size_18dp"
+        android:textColor="@color/colorGrayText"
+        android:ems="10"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/lay_create_group_event" />
+    <ExpandableListView
+        android:id="@+id/list_frequently"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/customTextView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <com.onmyway.common.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:textSize="@dimen/text_size_18dp"
+        android:textColor="@color/colorGrayText"
+        android:paddingLeft="15dp"
+        android:text="My Contacts"
+        android:ems="10"/>
+    <ExpandableListView
+        android:id="@+id/list_frequently"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/customTextView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</LinearLayout>

@@ -7,4 +7,10 @@
     <color name="colorGrey">#B4B4B4</color>
     <color name="colorRed">#FF0000</color>000000
     <color name="colorBlack">#000000</color>
+    <color name="colorLightGrey">#F5F7F7</color>
+    <color name="colorBlueBackgroud">#00B4E5</color>
+    <color name="colorGrayBackgound">#F4F8FA</color>
+    <color name="colorGrayText">#82898F</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorLayoutBackground">#E6E7E7</color>
 </resources>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/barcreategroup"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_purchase"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorBlueBackgroud"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create Group Event"
+                android:textSize="@dimen/text_size_16dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/toolbar_title"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textAllCaps="true"/>
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <com.onmyway.common.CustomEdittext
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittext_height_35dp"
+        android:inputType="textPersonName"
+        android:layout_margin="@dimen/edittext_margin_10dp"
+
+        android:text="Event Name*"
+        android:ems="10"
+        android:paddingLeft="@dimen/edittext_padding_left_10dp"
+        android:textColor="@color/colorGrey"
+        android:background="@drawable/border"
+        android:id="@+id/editText3"
+        android:layout_below="@+id/barcreategroup"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp" />
+    <Switch
+        android:layout_marginRight="@dimen/edittext_margin_10dp"
+        android:layout_marginLeft="@dimen/edittext_margin_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittext_height_35dp"
+        android:background="@drawable/border_switch"
+        android:id="@+id/switch1"
+
+        android:thumb="@color/colorTransparent"
+        android:track="@color/colorTransparent"
+        android:textOff=""
+        android:textOn=""
+
+        android:layout_below="@+id/editText3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <LinearLayout
+        android:id="@+id/lay_time"
+        android:layout_margin="@dimen/edittext_margin_10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:layout_below="@+id/switch1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="3"
+        android:layout_marginTop="13dp">
+
+        <LinearLayout
+            android:layout_width=""
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+
+            android:layout_height="match_parent">
+            <com.onmyway.common.CustomTextView
+                android:layout_margin="@dimen/edittext_margin_10dp"
+                android:text="Add Photo"
+                android:textColor="@color/colorGrayText"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <com.onmyway.common.CustomTextView
+                android:text="Photo"
+                android:gravity="center"
+                android:layout_marginRight="@dimen/edittext_margin_10dp"
+                android:layout_marginBottom="@dimen/edittext_margin_10dp"
+                android:layout_marginLeft="@dimen/edittext_margin_10dp"
+
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorLayoutBackground"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:layout_width=""
+            android:layout_height="match_parent">
+
+            <Spinner
+
+                android:layout_marginRight="@dimen/edittext_margin_10dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittext_height_35dp"
+                android:background="@drawable/border"/>
+            <DatePicker
+                android:layout_marginRight="@dimen/edittext_margin_10dp"
+                android:layout_marginTop="@dimen/edittext_margin_10dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittext_height_35dp"
+                android:background="@drawable/border"></DatePicker>
+            <Spinner
+                android:layout_marginTop="@dimen/edittext_margin_10dp"
+                android:layout_marginRight="@dimen/edittext_margin_10dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittext_height_35dp"
+                android:background="@drawable/border"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lay_repeat"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/lay_time"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <com.onmyway.common.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Repeat Event"
+            android:textColor="@color/colorGrayText"
+            android:layout_margin="@dimen/edittext_margin_10dp"
+            android:textSize="@dimen/text_size_16dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lay_meeting_point"
+        android:layout_below="@+id/lay_repeat"
+        android:orientation="vertical"
+        android:background="@color/colorLayoutBackground"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <com.onmyway.common.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/edittext_margin_10dp"
+            android:text="Set meeting point"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/edittext_margin_10dp"
+            android:textSize="@dimen/text_size_18dp"/>
+        <Switch
+            android:layout_marginRight="@dimen/edittext_margin_10dp"
+            android:layout_marginLeft="@dimen/edittext_margin_10dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edittext_height_35dp"
+            android:background="@drawable/border_switch"
+            android:id="@+id/switch2"
+
+            android:thumb="@color/colorTransparent"
+            android:track="@color/colorTransparent"
+            android:textOff=""
+            android:textOn=""
+
+            android:layout_below="@+id/editText3"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </LinearLayout>
+
+    <Button
+
+        android:background="@mipmap/btn_invite_friend"
+        android:layout_width="160dp"
+        android:layout_height="@dimen/edittext_height_35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:id="@+id/button" />
+
+
+</RelativeLayout>

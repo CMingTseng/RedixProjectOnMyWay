@@ -25,19 +25,6 @@
         android:layout_below="@+id/editText"
         android:layout_centerHorizontal="true" />
 
-    <com.onmyway.common.CustomTextView
-        android:text="Sign Up"
-        android:textColor="@color/colorWhite"
-        android:textSize="@dimen/text_size_20dp"
-        android:background="@mipmap/screen2_loginbutton"
-        android:layout_width="323dp"
-        android:layout_height="40dp"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
-        android:id="@+id/textView2"
-        android:gravity="center_vertical|center_horizontal|center" />
-
     <com.onmyway.common.CustomEdittext
         android:layout_width="323dp"
         android:layout_height="40dp"
@@ -54,4 +41,17 @@
         android:layout_below="@+id/imageView"
         android:layout_alignLeft="@+id/textView2"
         android:layout_alignStart="@+id/textView2" />
+
+    <com.onmyway.common.CustomTextView
+        android:text="Sign Up"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_size_20dp"
+        android:background="@mipmap/screen2_loginbutton"
+        android:layout_width="323dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textView2"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

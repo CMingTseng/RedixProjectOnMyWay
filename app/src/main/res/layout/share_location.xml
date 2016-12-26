@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGrey"
+    android:gravity="center_horizontal">
+
+
+    <com.onmyway.common.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Frequently Contacted"
+        android:textSize="@dimen/text_size_16dp"
+        android:textColor="@color/colorGrey"
+        android:ems="10"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/customTextView2" />
+
+    <ExpandableListView
+        android:id="@+id/list_frequently"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/customTextView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <com.onmyway.common.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="My Contacts"
+        android:textSize="@dimen/text_size_16dp"
+        android:textColor="@color/colorGrey"
+        android:ems="10"
+        android:layout_below="@+id/list_frequently"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/customTextView3" />
+    <ExpandableListView
+        android:id="@+id/list_myContacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/customTextView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <com.onmyway.common.CustomTextView
+        android:text="Share location"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_size_20dp"
+        android:layout_width="match_parent"
+        android:background="@mipmap/share_logcation_title_bar"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/textView3"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
