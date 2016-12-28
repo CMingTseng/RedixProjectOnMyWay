@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:paddingLeft="50dp"
+        android:layout_margin="@dimen/edittext_margin_10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <com.onmyway.common.CustomTextView
+            android:text="Me"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlueBackgroud"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/text_size_16dp"
+            android:layout_height="@dimen/text_size_20dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_size_20dp"
+            android:layout_weight="2">
+            <com.onmyway.common.CustomTextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:text="12 Sep 2016"
+                android:textSize="@dimen/text_size_16dp"
+                android:layout_height="@dimen/text_size_20dp" />
+            <com.onmyway.common.CustomTextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:text="11:30 AM"
+                android:textSize="@dimen/text_size_16dp"
+                android:layout_height="@dimen/text_size_20dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/grid_contacted_height_180dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/imageView3" />
+
+    <LinearLayout
+        android:paddingLeft="@dimen/edittext_padding_left_10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        >
+
+        <com.onmyway.common.CustomTextView
+
+            android:background="@mipmap/icon_location"
+            android:layout_width="23dp"
+            android:layout_height="21dp" />
+        <com.onmyway.common.CustomTextView
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/edittext_padding_left_10dp"
+            android:text="Keang Nam 72 LandMark"
+android:textColor="@color/colorBlueBackgroud"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <com.onmyway.common.CustomTextView
+        android:layout_marginLeft="@dimen/edittext_padding_left_10dp"
+        android:gravity="center_vertical"
+        android:text="Invitees"
+        android:textColor="@color/colorGrayText"
+        android:textSize="@dimen/text_size_18dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittext_height_35dp"
+        android:id="@+id/textView5" />
+
+    <ExpandableListView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/grid_contacted_height_180dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <com.onmyway.common.CustomTextView
+            android:background="@mipmap/btn_deleteEvent"
+            android:layout_width="145dp"
+            android:layout_height="35dp"
+
+            android:id="@+id/textView6" />
+    </LinearLayout>
+</LinearLayout>

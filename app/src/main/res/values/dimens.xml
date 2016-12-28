@@ -8,4 +8,5 @@
     <dimen name="edittext_height_35dp">35dp</dimen>
     <dimen name="edittext_padding_left_10dp">10dp</dimen>
     <dimen name="edittext_margin_10dp">10dp</dimen>
+    <dimen name="grid_contacted_height_180dp">180dp</dimen>
 </resources>

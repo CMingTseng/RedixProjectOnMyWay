@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ExpandableListView
+        android:id="@+id/list_contacted_invite"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/grid_contacted_height_180dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp" />
+
+    <RelativeLayout
+        android:id="@+id/lay_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <com.onmyway.common.CustomEdittext
+            android:layout_margin="@dimen/edittext_margin_10dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edittext_height_35dp"
+            android:inputType="textPersonName"
+            android:hint="Search"
+            android:textSize="@dimen/text_size_18dp"
+            android:textColorHint="@color/colorGrey"
+            android:paddingLeft="@dimen/edittext_margin_10dp"
+            android:background="@drawable/border_search"
+
+            android:ems="10"
+            android:id="@+id/editText4" />
+
+        <Button
+
+            android:background="@mipmap/icon_search"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/button2"
+            android:layout_marginRight="15dp"
+            android:layout_marginEnd="15dp"
+
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@+id/editText4"
+            android:layout_alignEnd="@+id/editText4" />
+
+    </RelativeLayout>
+
+    <com.onmyway.common.CustomTextView
+
+        android:text="Frequently Contacted  "
+        android:paddingLeft="@dimen/edittext_margin_10dp"
+        android:textColor="@color/colorGrayText"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/text_size_18dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittext_height_35dp"
+        android:layout_below="@+id/lay_search"
+
+        android:id="@+id/textView4" />
+
+    <com.onmyway.common.CustomTextView
+        android:text="My Contacted"
+        android:paddingLeft="@dimen/edittext_margin_10dp"
+        android:textColor="@color/colorGrayText"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/text_size_18dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittext_height_35dp"
+        android:layout_below="@+id/list_contacted_invite"
+
+        android:id="@+id/textView8" />
+
+    <ExpandableListView
+android:id="@+id/list_mycontacts_invite"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/grid_contacted_height_180dp"
+        android:layout_below="@+id/textView8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+
+        android:layout_width="145dp"
+        android:layout_height="@dimen/edittext_height_35dp"
+        android:background="@mipmap/btn_done_invite"
+        android:layout_below="@+id/list_mycontacts_invite"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:id="@+id/textView9" />
+
+
+</RelativeLayout>
