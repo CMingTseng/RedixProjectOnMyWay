@@ -13,4 +13,5 @@
     <color name="colorGrayText">#82898F</color>
     <color name="colorTransparent">#00000000</color>
     <color name="colorLayoutBackground">#E6E7E7</color>
+    <color name="colorBlueTransparent">#B333C3EA</color>
 </resources>

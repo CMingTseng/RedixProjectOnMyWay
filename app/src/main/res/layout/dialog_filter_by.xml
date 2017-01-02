@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorBlueTransparent"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+
+        android:background="@drawable/border_dialog"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <com.onmyway.common.CustomTextView
+            android:gravity="center"
+            android:text="Filter by"
+            android:background="@drawable/border"
+            android:textSize="@dimen/text_size_20dp"
+            android:textColor="@color/colorBlueBackgroud"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edittext_height_50dp"
+            android:id="@+id/textView12" />
+
+        <RadioButton
+            android:layout_below="@+id/rdb_minutes_left"
+            android:text="RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edittext_height_50dp"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="119dp"
+            android:id="@+id/rdb_latest" />
+
+        <RadioButton
+
+            android:text="RadioButton"
+
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edittext_height_50dp"
+            android:id="@+id/rdb_minutes_left"
+            android:layout_below="@+id/textView12"
+            android:layout_alignLeft="@+id/rdb_latest"
+            android:layout_alignStart="@+id/rdb_latest" />
+
+        <TextView
+            android:background="@mipmap/btn_done_diglog_filter"
+            android:layout_width="115dp"
+            android:layout_height="@dimen/edittext_height_35dp"
+            android:textSize="80dp"
+            android:id="@+id/textView14"
+            android:layout_marginTop="56dp"
+            android:layout_below="@+id/rdb_minutes_left"
+            android:layout_alignLeft="@+id/rdb_latest"
+            android:layout_alignStart="@+id/rdb_latest" />
+
+
+    </RelativeLayout>
+</RelativeLayout>
