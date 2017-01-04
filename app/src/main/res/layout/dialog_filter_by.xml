@@ -5,7 +5,7 @@
     android:layout_height="match_parent">
 
     <RelativeLayout
-
+    android:layout_margin="@dimen/edittext_margin_10dp"
         android:background="@drawable/border_dialog"
         android:orientation="vertical"
         android:layout_width="match_parent"

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorBlueTransparent"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_margin="@dimen/edittext_margin_10dp"
+        android:background="@drawable/border_dialog"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <com.onmyway.common.CustomTextView
+            android:gravity="center"
+            android:text="Contact"
+            android:background="@drawable/border"
+            android:textSize="@dimen/text_size_20dp"
+            android:textColor="@color/colorBlueBackgroud"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edittext_height_50dp"
+            android:id="@+id/textView12" />
+
+        <com.onmyway.common.CustomTextView
+            android:gravity="center"
+            android:text="Ngoc Trinh \n +84989999999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_18dp"
+            android:layout_marginTop="18dp"
+            android:id="@+id/textView11"
+            android:layout_below="@+id/textView12"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+
+            android:layout_width="115dp"
+            android:layout_height="34dp"
+            android:background="@mipmap/btn_call"
+            android:id="@+id/textView18"
+            android:layout_alignBaseline="@+id/textView17"
+            android:layout_alignBottom="@+id/textView17"
+            android:layout_toRightOf="@+id/textView17"
+            android:layout_toEndOf="@+id/textView17"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp" />
+
+        <TextView
+            android:text=""
+            android:layout_width="115dp"
+            android:layout_height="34dp"
+            android:background="@mipmap/btn_sms"
+            android:id="@+id/textView17"
+            android:layout_marginLeft="61dp"
+            android:layout_marginStart="61dp"
+            android:layout_marginBottom="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+    </RelativeLayout>
+</RelativeLayout>
