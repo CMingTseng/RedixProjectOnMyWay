@@ -20,10 +20,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:id="@+id/textView"
+        android:id="@+id/txt_loginform_inform"
         android:gravity="center_vertical|center_horizontal|center"
-        android:layout_below="@+id/editText"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/edt_loginform_phonenum"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
 
     <com.onmyway.common.CustomEdittext
         android:layout_width="323dp"
@@ -37,10 +38,10 @@
         android:background="@color/colorWhite"
         android:ems="10"
         android:layout_marginTop="55dp"
-        android:id="@+id/editText"
+        android:id="@+id/edt_loginform_phonenum"
         android:layout_below="@+id/imageView"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_alignStart="@+id/textView2" />
+        android:layout_alignLeft="@+id/btn_loginform_signup"
+        android:layout_alignStart="@+id/btn_loginform_signup" />
 
     <com.onmyway.common.CustomTextView
         android:text="Sign Up"
@@ -50,8 +51,8 @@
         android:layout_width="323dp"
         android:layout_height="40dp"
         android:layout_marginTop="15dp"
-        android:id="@+id/textView2"
+        android:id="@+id/btn_loginform_signup"
         android:gravity="center_vertical|center_horizontal|center"
-        android:layout_below="@+id/textView"
+        android:layout_below="@+id/txt_loginform_inform"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>

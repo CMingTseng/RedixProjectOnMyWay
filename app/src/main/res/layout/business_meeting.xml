@@ -102,7 +102,7 @@ android:textColor="@color/colorBlueBackgroud"
         android:layout_height="match_parent"
         android:gravity="center">
         <com.onmyway.common.CustomTextView
-            android:background="@mipmap/btn_deleteEvent"
+            android:background="@mipmap/btn_delete_event"
             android:layout_width="145dp"
             android:layout_height="35dp"
 
